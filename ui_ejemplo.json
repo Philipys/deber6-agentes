@@ -1,0 +1,25 @@
+{
+  "component": "Card",
+  "title": "Hallazgo de seguridad",
+  "children": [
+    {
+      "component": "Text",
+      "text": "Archivo: usuarios.py · Línea: 21 · Severidad: alta"
+    },
+    {
+      "component": "Text",
+      "text": "Entrada 'nombre' concatenada directamente en consulta SQL sin validar ni parametrizar (riesgo de SQL Injection)."
+    },
+    {
+      "component": "Button",
+      "label": "Solicitar revisión adicional",
+      "event": "pedir_revision",
+      "payload": {
+        "archivo": "usuarios.py",
+        "linea": 21,
+        "severidad": "alta"
+      }
+    }
+  ]
+}
+
